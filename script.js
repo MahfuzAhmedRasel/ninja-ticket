@@ -1,4 +1,5 @@
-// event listener 
+// event listener first class
+
 var fristClassIncrease = document.getElementById('first-increase');
 fristClassIncrease.addEventListener('click', function(){
     numberUp('frist-number');
@@ -53,7 +54,6 @@ function numberDown(ticketClass){
 // price increase
 function priceCount(price){
 
-   
     var subTotal = document.getElementById('sub-total');
     var newSubtotal= parseFloat(subTotal.innerText);
     var subTotalNumber = newSubtotal + price;
@@ -67,8 +67,9 @@ function priceCount(price){
    var total = document.getElementById('total');
    total.innerText = subTotalNumber + vatCargeNumber;
 
-
 }
+// price decrease
+
 function priceCountDown(price){
     
     var subTotal = document.getElementById('sub-total');
